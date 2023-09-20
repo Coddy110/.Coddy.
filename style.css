@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    width: 90%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+.main1, .main  {
+    flex-basis:  50%;
+    padding: 4px;
+}
+label {
+    margin-bottom: 20px;
+}
+textarea {
+    width: 90%;
+    height: 30%;
+    padding: 10px 20px;
+    color: rgb(0, 255, 0);
+    border: 1px solid rgb(0, 255, 0);
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+iframe {
+    width: 95%;
+    height: 80%;
+    color: rgb(0, 255, 0);
+    border: 1px solid rgb(0, 255, 0);
+    outline: none;
+}
+@media (max-width: 890px) {
+    .container {
+        width: 80%;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main1, .main  {
+        flex-basis: 50%;
+        padding: 4px;
+    }
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 19%;
+    }
+
+
+
+
+}
+@media (max-width: 710px) {
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 24%;
+    }
+
+
+}
+@media (max-width: 588px) {
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 28%;
+    }
+
+
+}
+@media (max-width: 460px) {
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 40%;
+    }
+
+
+}
+@media (max-width: 710px) {
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 46%;
+    }
+
+
+}
+@media (max-width: 298px) {
+    .main {
+        width: 95%;
+        height: 70%;
+        color: rgb(0, 255, 0);
+        margin-top: 60%;
+    }
+
+
+}
+@media (max-width: 320px) {
+    .container {
+        width: 90%;
+        height: 100vh;
+        padding: 5px;
+        display: flex;
+    }
+
+}
+h1, h4 {
+    text-align: center;
+}
+h1 {
+    margin-top: 20px;
+}
+h4 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Coddy.png" type="image/x-icon">
+    <title>Coddy</title>
+</head>
+<body>
+    <h1>Coddy</h1>
+        <h4>Test Run Code Like Hacker </h4>
+    <div class="container">
+        <div class="main1">
+            <label >HTML</label>
+            <textarea id="htmlcode" onkeyup="run()"></textarea>
+            <label >CSS</label>
+            <textarea id="csscode" onkeyup="run()"></textarea>
+            <label >JAVASCRIPT</label>
+            <textarea id="jscode" onkeyup="run()"></textarea>
+        </div>
+        <div class="main">
+            <label>Output</label>
+            <iframe  id="output"></iframe>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function run() {
+        let htmlCode = document.getElementById("htmlcode").value;
+        let cssCode = document.getElementById("csscode").value;
+        let jsCode = document.getElementById("jscode").value;
+        let output = document.getElementById("output");
+        output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
+        output.contentWindow.eval(jsCode)
+    }
+</script>
+
+</html>
